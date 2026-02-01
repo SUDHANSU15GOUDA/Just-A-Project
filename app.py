@@ -20,18 +20,23 @@ with col1:
     centered_gif("https://media.tenor.com/7UHqqhLP8tgAAAAi/stk.gif", 300)
 
 with col2:
-    st.write()
-    st.write()
-    st.write()
+    if "typed" not in st.session_state:
+        st.session_state.typed = False
+
     placeholder1 = st.empty()
-
     sentence = "Hellos, I am My little Kito meow meow. I am here to assist you. This weird creator is very lazy to assist the viewers so he has hired me to do it for him. It's not like I am free it's just that his intentions and the website he made is just so cool so I aggreed to play along with him. Although I have demanded him cat food and treats worth a year HEHEHE... feel free to curse him if you didn't like his work."
-    text = ""
 
-    for char in sentence:
-        text += char
-        placeholder1.markdown(f"### {text}")
-        time.sleep(0.10)
+    if not st.session_state.typed:
+        
+        text = ""
+        for char in sentence:
+            text += char
+            placeholder1.markdown(f"### {text}")
+            time.sleep(0.10)
+        st.session_state.typed = True
+    else:
+        # Show the full sentence instantly
+        placeholder1.markdown(f"### {sentence}")
 
 
 
