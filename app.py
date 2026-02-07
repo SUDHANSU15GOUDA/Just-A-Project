@@ -1,6 +1,5 @@
 import streamlit as st
-from base import centered_texts, centered_gif, balloon_reset, empty_line, centered_button, placeholder_gif, placeholder_texts, snow_reset, hide_button
-import page1
+from base import centered_texts, centered_gif, balloon_reset, empty_line, placeholder_gif, hide_button
 import time
 
 st.set_page_config(page_title="Just A Normal Webpage",
@@ -72,4 +71,8 @@ else:
     placeholder_gif(
         placeHolder2,
         "https://media.tenor.com/h_jy2s28rlYAAAAj/spinning-cat.gif", 300)
-    st.switch_page("page1.py")
+    time.sleep(2)
+    st.switch_page("pages/page1.py")
+
+
+st.switch_page("pages/Introduce Your Self.py")
