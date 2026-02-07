@@ -72,7 +72,7 @@ else:
         placeHolder2,
         "https://media.tenor.com/h_jy2s28rlYAAAAj/spinning-cat.gif", 300)
     time.sleep(2)
-    st.switch_page("pages/page1.py")
+    st.switch_page("pages/Introduce Your Self.py")
 
 
 st.switch_page("pages/Introduce Your Self.py")
