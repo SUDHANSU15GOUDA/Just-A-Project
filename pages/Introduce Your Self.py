@@ -17,9 +17,9 @@ if "typed" not in st.session_state:
        st.session_state.typed = False
 
 placeholder1 = st.empty()
-# sentence = "I am shivering 🥶 plz enter your name asap and hit enter... Hey you cruel creator I mean Sir I won't demand for cat food... Just don't do this to me 😢 ... Just give me cat treats and I am good 😞."
+sentence = "I am shivering 🥶 plz enter your name asap and hit enter... Hey you cruel creator I mean Sir I won't demand for cat food... Just don't do this to me 😢 ... Just give me cat treats and I am good 😞."
 
-sentence = "HELLO"
+# sentence = "HELLO"
 
 if not st.session_state.typed:
 
