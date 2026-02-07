@@ -75,4 +75,4 @@ else:
     st.switch_page("pages/Introduce Your Self.py")
 
 
-st.switch_page("pages/Introduce Your Self.py")
+# st.switch_page("pages/Introduce Your Self.py")
