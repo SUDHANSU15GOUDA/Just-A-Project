@@ -53,7 +53,7 @@ if name:
 
        ocean_divider()
 
-       centered_texts("Let's Verify If You Are A Human Or Let's Just Say Larry", 2, "")
+       centered_texts("Let's Verify If You Are A Human Or Else Let's Just Say You Are Larry", 2, "")
        time.sleep(2)
        centered_gif("https://media.tenor.com/BfwjGMwp30oAAAAj/evil-larry-larry.gif", 300)
 
